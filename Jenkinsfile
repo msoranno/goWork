@@ -12,6 +12,11 @@ node('master') {
       stage('checkout'){
         checkout scm
       }    
+      stage('docker build'){
+        sh """
+        docker images
+        """
+      }    
 
     }
 }
