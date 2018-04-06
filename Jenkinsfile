@@ -14,7 +14,7 @@ node('master') {
       }    
       stage('docker build'){
         sh """
-        docker images
+        sudo docker images
         """
       }    
 
